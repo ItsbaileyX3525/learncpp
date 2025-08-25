@@ -1,12 +1,13 @@
 #include <iostream>
-#include <string>
+#include <cmath>
 
-using namespace std;
 int main()
 {
-    string firstName;
-    cout << "Type your first name: ";
-    getline(cin, firstName);
-    cout << "Your name is: " << firstName << endl;
+    int i = 0;
+    do {
+        printf("%i\n", i);
+        i++;
+    }
+    while (i <= 5000000);
     return 0;
 }
