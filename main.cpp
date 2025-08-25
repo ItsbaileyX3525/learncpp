@@ -1,12 +1,11 @@
 #include <iostream>
 #include <cmath>
 
-int main()
-{
-    for (int i = 0; i <= 5000000000; i++) {
-        //printf("%d\n", i);
+int main() {
+    char test[] = "test";
 
+    for (char c : test) {
+        std::cout << c << std::endl;
     }
-    printf("Done\n");
     return 0;
 }
