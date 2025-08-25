@@ -3,11 +3,10 @@
 
 int main()
 {
-    int i = 0;
-    do {
-        printf("%i\n", i);
-        i++;
+    for (int i = 0; i <= 5000000000; i++) {
+        //printf("%d\n", i);
+
     }
-    while (i <= 5000000);
+    printf("Done\n");
     return 0;
 }
