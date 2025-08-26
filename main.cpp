@@ -2,15 +2,14 @@
 #include <cmath>
 
 int main() {
-    struct {
-        int myNum;
-        std::string myString;
-    } myStructure;
+    enum Difficulty {
+        LOW,
+        MEDIUM,
+        HARD
+    };
 
-    myStructure.myNum = 1;
-    myStructure.myString = "Test thing";
+    enum Difficulty myVar = LOW; //low = 0, Med = 1 and high = 3?
 
-    std::cout << myStructure.myNum << std::endl;
-    std::cout << myStructure.myString << std::endl;
+    std::cout << myVar;
     return 0;
 }
