@@ -4,19 +4,16 @@
 int main() {
     std::string food = "Pizza";
 
-    std::string &meal = food;
+    std::string* ptr = &food;
 
     std::cout << food << std::endl;
 
-    std::cout << meal << std::endl; //Why does this print pizza as well? I thought it was the mem pos
+    std::cout << &food << std::endl;
 
-    meal = "Burger";
+    std::cout << ptr << std::endl;
 
-    std::cout << food << std::endl;
 
-    std::cout << meal << std::endl; //????
-
-    std::cout << &food << std::endl; //Confused
+    std::cout << *ptr << std::endl;
 
     return 0;
 }
