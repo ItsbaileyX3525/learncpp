@@ -2,14 +2,21 @@
 #include <cmath>
 
 int main() {
-    enum Difficulty {
-        LOW,
-        MEDIUM,
-        HARD
-    };
+    std::string food = "Pizza";
 
-    enum Difficulty myVar = LOW; //low = 0, Med = 1 and high = 3?
+    std::string &meal = food;
 
-    std::cout << myVar;
+    std::cout << food << std::endl;
+
+    std::cout << meal << std::endl; //Why does this print pizza as well? I thought it was the mem pos
+
+    meal = "Burger";
+
+    std::cout << food << std::endl;
+
+    std::cout << meal << std::endl; //????
+
+    std::cout << &food << std::endl; //Confused
+
     return 0;
 }
