@@ -2,10 +2,14 @@
 #include <cmath>
 
 int main() {
-    char test[] = "test";
+    std::string letters[2][4] = {
+        { "A", "B", "C", "D" },
+        { "A", "B", "C", "D" },
+    };
 
-    for (char c : test) {
-        std::cout << c << std::endl;
-    }
+    //prints the memory location?
+    //std::cout << letters << std::endl;
+
+    std::cout << letters[1][2] << std::endl;
     return 0;
 }
