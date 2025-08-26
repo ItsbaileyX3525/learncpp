@@ -2,14 +2,15 @@
 #include <cmath>
 
 int main() {
-    std::string letters[2][4] = {
-        { "A", "B", "C", "D" },
-        { "A", "B", "C", "D" },
-    };
+    struct {
+        int myNum;
+        std::string myString;
+    } myStructure;
 
-    //prints the memory location?
-    //std::cout << letters << std::endl;
+    myStructure.myNum = 1;
+    myStructure.myString = "Test thing";
 
-    std::cout << letters[1][2] << std::endl;
+    std::cout << myStructure.myNum << std::endl;
+    std::cout << myStructure.myString << std::endl;
     return 0;
 }
